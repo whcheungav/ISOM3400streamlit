@@ -9,7 +9,7 @@ if "expenses" not in st.session_state:
 
 with st.form("Expense_Form"):
     st.subheader("Add New Expense")
-    data=st.date_input("Date")
+    date=st.date_input("Date")
     category=st.selectbox("Category",["Food","Transport","Entertainment","Other"])
     amount=st.number_input("Amount",min_value=0.0,step=0.01)
     description=st.text_input("Description")
